@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "dashboard-app-98236"
+  },
+  "targets": {
+    "dashboard-app-98236": {
+      "hosting": {
+        "dashboard-app": [
+          "dashboard-app"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

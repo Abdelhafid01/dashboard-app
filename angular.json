@@ -30,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"
             ],
             "scripts": [],
@@ -95,10 +96,28 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "dashboard-app:build:production",
+              "serveTarget": "dashboard-app:serve:production"
+            },
+            "development": {
+              "buildTarget": "dashboard-app:build:development",
+              "serveTarget": "dashboard-app:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
